@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Open+Sans:wght@400;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-heading: 'Gotham Bold', 'Gotham', 'Montserrat', sans-serif;
+  --font-body: 'Proxima Nova', 'Open Sans', sans-serif;
+}
+
+body {
+  font-family: var(--font-body);
+  color: #3C4247;
+  background-color: #F4F4F4;
+}
+
+.font-heading {
+  font-family: var(--font-heading);
+  font-weight: 700;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  color: #3C4247;
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.recharts-wrapper,
+.recharts-surface,
+.recharts-responsive-container,
+.recharts-wrapper * {
+  outline: none !important;
+}
